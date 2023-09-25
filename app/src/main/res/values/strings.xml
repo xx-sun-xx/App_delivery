@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">App_delivery</string>
+    <string name="ol_mundo">Olá mundo</string>
+    <string name="vamos_come_ar">Vamos Começar</string>
+    <string name="todo">TODO</string>
+    <string name="food_for_everyone">Food for Everyone</string>
+    <string name="food_for_everyone_carregamento">Food for Everyone</string>
+    <string name="endere_o_de_email">Endereço de Email</string>
+    <string name="senha">Senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="endere_o_de_email_cadastro">Endereço de Email</string>
+    <string name="cadastre_se_cadastro">Cadastre-se</string>
+    <string name="repita_a_senha">Repita a Senha</string>
+    <string name="senha_cadastro">Senha</string>
+    <string name="esqueceu_a_senha">Esqueceu a Senha?</string>
+    <string name="entrar_cadastrp">Entrar</string>
+</resources>
