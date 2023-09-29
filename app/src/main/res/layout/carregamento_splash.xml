@@ -9,12 +9,12 @@
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/carregamento_1_"
-        android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
     <ImageView
@@ -33,13 +33,13 @@
         android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.452"
         app:srcCompat="@drawable/bella_olonje_logo_111_1_1_"
-        android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
@@ -55,7 +55,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516"
+        app:layout_constraintVertical_bias="0.533"
         tools:ignore="SmallSp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

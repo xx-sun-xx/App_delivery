@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF4B3A"
-    tools:context=".MainActivity">
+    tools:context=".Start">
 
     <TextView
         android:id="@+id/textView3"
@@ -46,6 +46,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.197"
@@ -53,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075"
         app:srcCompat="@drawable/bella_olonje_logo_111_1"
-        android:contentDescription="@string/todo" />
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -83,7 +84,7 @@
         tools:ignore="ContentDescription,HardcodedText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_inicio"
         android:layout_width="287dp"
         android:layout_height="70dp"
         android:backgroundTint="#FBFBFB"
