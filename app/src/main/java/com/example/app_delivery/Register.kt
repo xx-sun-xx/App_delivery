@@ -1,18 +1,20 @@
 package com.example.app_delivery
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class Login : AppCompatActivity() {
+class Register : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.setContentView(R.layout.login)
+        setContentView(R.layout.register)
 
-        val button: Button = findViewById(R.id.bt_register_login)
+        val button: Button = findViewById(R.id.button_registeraccount)
         button.setOnClickListener {
-            val intent = Intent (this,Register::class.java)
+            val intent = Intent (this,Login::class.java)
             startActivity(intent)
         }
     }
