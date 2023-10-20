@@ -6,13 +6,13 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 
-class Splash : AppCompatActivity() {
+class ActivitySplash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.carregamento_splash)
+        setContentView(R.layout.splash_activity)
 
         Handler(Looper.getMainLooper()) .postDelayed({
-            val intent = Intent(this,Start::class.java)
+            val intent = Intent(this,ActivityStart::class.java)
             startActivity(intent)
             finish()
         },300000)

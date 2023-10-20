@@ -8,15 +8,15 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="426dp"
+        android:layout_width="410dp"
         android:layout_height="348dp"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.001"
         app:srcCompat="@drawable/rectangle_4"
         tools:ignore="ContentDescription,HardcodedText,VisualLintBounds" />
 
@@ -29,26 +29,74 @@
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintVertical_bias="0.482"
         app:srcCompat="@drawable/group_3_2"
         tools:ignore="ContentDescription,HardcodedText" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/nome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/digite_seu_nome_hint_register"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
         android:layout_width="330dp"
         android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/digite_sua_senha"
+        android:hint="@string/endere_o_de_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624"
+        tools:ignore="LabelFor,MissingConstraints,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/endere_o_de_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
+        app:layout_constraintVertical_bias="0.725"
         tools:ignore="LabelFor,MissingConstraints,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <TextView
@@ -59,97 +107,83 @@
         android:text="@string/senha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.611"
+        app:layout_constraintVertical_bias="0.678"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_semibold"
-        android:text="@string/esqueceu_a_senha"
-        android:textColor="#FA4A0C"
+        android:text="@string/nome_hint_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.487" />
 
     <Button
-        android:id="@+id/bt_entrar"
+        android:id="@+id/button_registeraccount"
         android:layout_width="251dp"
         android:layout_height="55dp"
         android:backgroundTint="#FA4A0C"
-        android:text="@string/entrar_cadastrp"
+        android:text="@string/registrar"
         android:textColor="#F5F5F5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintOverlap" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/confirmPassword"
+        android:layout_width="331dp"
+        android:layout_height="49dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/digite_seu_email"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="#546E7A"
+        android:fontFamily="@font/inter_semibold"
+        android:hint="@string/repita_a_senha_novamente"
+        android:inputType="textPassword"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.83"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_semibold"
-        android:text="@string/endere_o_de_email"
+        android:text="@string/repita_a_senha_novamente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
+        app:layout_constraintVertical_bias="0.78"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/bt_register_login"
-        android:layout_width="251dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#FA4A0C"
-        android:text="@string/registre_se"
-        android:textColor="#F5F5F5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956"
-        tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
+    <TextView
+        android:id="@+id/ja_tem_uma_conta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/box_login"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/j_tem_uma_conta_clique_aqui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.744"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

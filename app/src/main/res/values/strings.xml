@@ -67,4 +67,6 @@
     <string name="digite_seu_sobrenome_hint_register">Digite Seu Sobrenome</string>
     <string name="nome_hint_register">Nome</string>
     <string name="sobrenome_hint_register">Sobrenome</string>
+    <string name="repita_a_senha_novamente">Repita a Senha</string>
+    <string name="j_tem_uma_conta_clique_aqui">Já Tem uma conta? Clique Aqui.</string>
 </resources>
